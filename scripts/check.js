@@ -55,8 +55,9 @@
             }
         },
         startCheck() {
-            document.getElementById('pre-title').innerHTML =
-                'Результат прохождения теста <img src="../images/small-arrow-grey.png" alt="Серая стрелочка"><span>' + this.quiz.name + '</span>';
+            let preTitle = document.getElementById('pre-title');
+            preTitle.innerHTML = preTitle.innerHTML + '<span>' + this.quiz.name + '</span>';
+
             document.getElementById('user-info').innerHTML =
                 'Тест выполнил <span>' + this.params.name + ', ' + this.params.email + '</span>';
 
