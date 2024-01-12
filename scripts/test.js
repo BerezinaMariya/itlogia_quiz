@@ -150,6 +150,8 @@
         },
         chooseAnswer() {
             this.nextButtonElement.removeAttribute('disabled');
+            this.passButtonElement.classList.add('test__pass-button_disabled');
+            this.passButtonImageElement.setAttribute('src', 'images/small-arrow-grey.png');
         },
         move(action) {
             const activeQuestion = this.quiz.questions[this.currentQuestionIndex - 1];
