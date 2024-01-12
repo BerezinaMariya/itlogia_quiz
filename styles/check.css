@@ -1,0 +1,26 @@
+.check {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.check__title {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.check__user-info {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.check__user-info span {
+    color: #6933DC;
+}
+
+.check__answers-item {
+    margin-top: 60px;
+}
+
+.check__question-options {
+    margin-top: 40px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка правильности ответов</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/check.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+        </div>
+    </div>
+</header>
+
+<section class="check">
+    <div class="container">
+        <div class="check__pre-title common-pre-title" id="pre-title">
+            Результат прохождения теста <img src="images/small-arrow-grey.png" alt="Серая стрелочка">
+            <span>Тест №1. “JavaScript: Начальный уровень”</span>
+        </div>
+        <div class="check__title big-title" id="title">
+            Правильные ответы <span>к тесту</span>
+        </div>
+        <div class="check__user-info" id="user-info">
+            Тест выполнил <span>Роман Чернов, roman@itlogia.ru</span>
+        </div>
+        <div class="check__answers" id="answers">
+<!--            <div class="check__answers-item" id="answers-item">-->
+<!--                <div class="check__answers-title common-question-title" id="answers-title">-->
+<!--                    <span>Вопрос 1:</span> Тут должен быть текст вопроса?-->
+<!--                </div>-->
+<!--                <div class="check__question-options">-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" id="answer-one" name="answer">-->
+<!--                        <label for="answer-one">Вариант ответа 1</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" id="answer-two" name="answer">-->
+<!--                        <label for="answer-two">Вариант ответа 2</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option right">-->
+<!--                        <input type="radio" id="answer-three" name="answer">-->
+<!--                        <label for="answer-three">Вариант ответа 3</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" id="answer-four" name="answer">-->
+<!--                        <label for="answer-four">Вариант ответа 4</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="check__answers-item">-->
+<!--                <div class="check__answers-title common-question-title">-->
+<!--                    <span>Вопрос 2:</span> Тут должен быть текст вопроса?-->
+<!--                </div>-->
+<!--                <div class="check__question-options">-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-one">Вариант ответа 1</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-two">Вариант ответа 2</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-three">Вариант ответа 3</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option wrong">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-four">Вариант ответа 4</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="check__answers-item">-->
+<!--                <div class="check__answers-title common-question-title">-->
+<!--                    <span>Вопрос 3:</span> Тут должен быть текст вопроса?-->
+<!--                </div>-->
+<!--                <div class="check__question-options">-->
+<!--                    <div class="common-question-option right">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-one">Вариант ответа 1</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-two">Вариант ответа 2</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-three">Вариант ответа 3</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-four">Вариант ответа 4</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="check__answers-item">-->
+<!--                <div class="check__answers-title common-question-title">-->
+<!--                    <span>Вопрос 4:</span> Тут должен быть текст вопроса?-->
+<!--                </div>-->
+<!--                <div class="check__question-options">-->
+<!--                    <div class="common-question-option right">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-one">Вариант ответа 1</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-two">Вариант ответа 2</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-three">Вариант ответа 3</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-four">Вариант ответа 4</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="check__answers-item">-->
+<!--                <div class="check__answers-title common-question-title">-->
+<!--                    <span>Вопрос 5:</span> Тут должен быть текст вопроса?-->
+<!--                </div>-->
+<!--                <div class="check__question-options">-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-one">Вариант ответа 1</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-two">Вариант ответа 2</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option wrong">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-three">Вариант ответа 3</label>-->
+<!--                    </div>-->
+<!--                    <div class="common-question-option">-->
+<!--                        <input type="radio" name="answer">-->
+<!--                        <label for="answer-four">Вариант ответа 4</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <div class="common-action">
+            <a href="result.html" id="previous-page">Обратно к моему результату теста <img src="images/small-arrow.png"
+                                                                                 alt="Стрелка"></a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/check.js"></script>
+</body>
+</html>
