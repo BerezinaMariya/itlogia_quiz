@@ -104,13 +104,18 @@
     margin-top: 10px;
 }
 
-.test__pass-question a {
+.test__pass-button {
     font-size: 17px;
     line-height: 20px;
     color: #6933DC;
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.test__pass-button_disabled {
+    color: #DCDCF3;
+    pointer-events: none;
 }
 
 .test__pass-question a:hover {

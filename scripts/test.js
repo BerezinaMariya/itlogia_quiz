@@ -6,6 +6,7 @@
         questionOptionsElement: null,
         nextButtonElement: null,
         passButtonElement: null,
+        passButtonImageElement: null,
         prevButtonElement: null,
         currentQuestionIndex: 1,  // Когда попадаем на страницу теста, всегда начинаем с первого вопроса
         questions: {},
@@ -47,6 +48,7 @@
 
             this.passButtonElement = document.getElementById('pass');
             this.passButtonElement.onclick = this.move.bind(this, 'pass');
+            this.passButtonImageElement = document.getElementById('pass-img');
 
             this.prevButtonElement = document.getElementById('prev');
             this.prevButtonElement.onclick = this.move.bind(this, 'prev');
@@ -126,10 +128,12 @@
 
             if (chosenOption && chosenOption.chosenAnswerId) {
                 this.nextButtonElement.removeAttribute('disabled');
-                this.passButtonElement.setAttribute('disabled', 'disabled');
+                this.passButtonElement.classList.add('test__pass-button_disabled');
+                this.passButtonImageElement.setAttribute('src', 'images/small-arrow-grey.png');
             } else {
                 this.nextButtonElement.setAttribute('disabled', 'disabled');
-                this.passButtonElement.removeAttribute('disabled');
+                this.passButtonElement.classList.remove('test__pass-button_disabled');
+                this.passButtonImageElement.setAttribute('src', 'images/small-arrow.png');
             }
 
             if (this.currentQuestionIndex === this.quiz.questions.length) {
