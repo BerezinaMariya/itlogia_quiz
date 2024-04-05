@@ -90,7 +90,7 @@
 .test__time-clock {
     width: 27px;
     height: 29px;
-    background-image: url("../images/time.png");
+    background-image: url("/images/time.png");
     background-size: cover;
     background-position: center;
     font-size: 10px;

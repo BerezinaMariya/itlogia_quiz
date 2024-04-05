@@ -52,3 +52,22 @@
     display: block;
 }
 
+.choice__option-result {
+    position: absolute;
+    z-index: 2;
+    right: 18px;
+    top: 16px;
+    border: 1px solid #6933DC;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6933DC;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.choice__option-result div:first-child {
+    margin-bottom: 3px;
+}
+
+

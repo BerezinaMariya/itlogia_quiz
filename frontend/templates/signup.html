@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/form.css">
-</head>
-<body>
-
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Логотип">
-        </div>
-    </div>
-</header>
-
 <section class="form">
     <div class="container">
         <div class="form__content">
-            <h1 class="form__title common-title">Введите свои <span>данные</span></h1>
+            <h1 class="form__title common-title">Регистрация</h1>
             <div class="form__details">
                 <div class="form__group">
                     <input type="text" class="form__input" id="name" required>
@@ -33,6 +15,10 @@
                     <input type="text" class="form__input" id="email" required>
                     <label for="email" class="form__label">Электронная почта</label>
                 </div>
+                <div class="form__group">
+                    <input type="password" class="form__input" id="password" required>
+                    <label for="password" class="form__label">Пароль</label>
+                </div>
               <div class="form__agree">
                 <input type="checkbox" id="agree" required>
                 <label for="agree">
@@ -43,15 +29,10 @@
           <div class="form__button">
             <button class="button" id="process" disabled>Перейти к выбору теста</button>
           </div>
+            <div class="form__link">Уже зарегистрированы? <a href="/#/login">Войти</a></div>
         </div>
         <div class="form__image">
-            <img src="images/info-image.png" alt="Персонаж">
+            <img src="/images/info-image.png" alt="Персонаж">
         </div>
     </div>
 </section>
-
-<footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
-
-<script src="scripts/form.js"></script>
-</body>
-</html>

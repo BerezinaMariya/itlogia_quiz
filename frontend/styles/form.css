@@ -84,5 +84,11 @@
 }
 
 .form__button {
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+.form__link {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 14px;
 }
